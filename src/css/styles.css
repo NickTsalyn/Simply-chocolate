@@ -65,14 +65,14 @@
   .container {
     width: 375px;
     margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
