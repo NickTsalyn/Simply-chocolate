@@ -1,0 +1,16 @@
+.our-product-list {
+  display: flex;
+  gap: 18px;
+}
+.our-product-item {
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .our-product-item {
+    width: 270px;
+  }
+}
