@@ -1,12 +1,10 @@
 .section.subscribe-section {
   padding-top: 62px;
+  padding-bottom: 63px;
 }
 .subscribe-section {
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-
-  padding-bottom: 63px;
 
   background-color: var(--secondary-background-color);
   background-size: cover;
@@ -62,52 +60,33 @@
     padding-bottom: 72px;
   }
 }
-.subscribe-title {
-  width: 197px;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  /* text-transform: appercase; */
-  text-align: center;
 
-  color: #fff;
+.subscribe-title {
+  max-width: 291px;
+
   margin: 0 auto 24px auto;
+  color: #fff;
 }
 .subscribe-text {
   max-width: 326px;
-  height: 108px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+  margin: 0 auto 24px auto;
 
-  text-align: center;
   color: #fff;
-  margin-bottom: 24px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media only screen and (min-width: 768px) {
+  .subscribe-title {
+    width: 378px;
+  }
   .subscribe-text {
     max-width: 467px;
-    height: 72px;
   }
 }
 .button-subscribe {
   width: 128px;
   height: 41px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  padding: 12px 28px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 
   color: #ffffff;
   background-color: var(--secondary-color);
-  border-radius: 100px;
-  border: none;
 }
 @media only screen and (min-width: 768px) {
   .button-subscribe {
@@ -117,3 +96,31 @@
     height: 50px;
   }
 }
+.button-subscribe:hover,
+.button-subscribe:focus {
+  color: var(--secondary-color);
+  background-color: #fcf1e0;
+}
+/* .section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+} */
+/* .section-text {
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  padding: 12px 28px;
+  border-radius: 100px;
+  border: none;
+} */
