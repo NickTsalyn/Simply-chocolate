@@ -36,6 +36,9 @@
   --secondary-color: #fd9222;
   --primary-background-color: #e2e2e2;
   --secondary-background-color: #1e1823;
+  --light-text-color: #ffffff;
+  --hover-btn-color: #fcf1e0;
+  --transition-dur-timing-func: 500ms ease-out;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -104,4 +107,65 @@ body {
   .section {
     padding-top: 128px;
   }
+}
+
+.section-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+/* Для заголовків секцій */
+.section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 375px) {
+  .main-text {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  padding: 12px 28px;
+  border-radius: 100px;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
