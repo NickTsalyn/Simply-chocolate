@@ -36,6 +36,8 @@
   --secondary-color: #fd9222;
   --primary-background-color: #e2e2e2;
   --secondary-background-color: #1e1823;
+  --light-text-color: #ffffff;
+  --hover-btn-color: #fcf1e0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
