@@ -179,17 +179,15 @@
     }
     .section-components-title {
         width: 411px;
+        
         justify-content: center;
     }
     .components-list {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 32px; 
-       /* flex-basis: calc((100% - 64px ) / 2 ); */
     }
-    /*.components-item {
-        
-    }*/
+    
     
 
   }
