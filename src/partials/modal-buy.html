@@ -1,0 +1,105 @@
+<!-- Order/Buy modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div id="modal-buy" class="modal-buy">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-icon" width="12" height="12">
+        <use href="../img/icons.svg#close-button"></use>
+      </svg>
+    </button>
+    <strong class="modal-heading"
+      ><span class="mod-headning-highlighted">buy</span> now</strong
+    >
+    <ul>
+      <li>
+        <div class="modal-choc-container">
+          <img
+            class="modal-choc-pic"
+            src="../img/modal-buy/choc-piece-mob.jpg"
+            alt="piece of chocolate"
+          />
+          <button class="modal-buy-chocolate-button" type="button">
+            <span class="modal-chocolate-btn-txt">100 g</span>
+          </button>
+        </div>
+      </li>
+      <li>
+        <div class="modal-choc-container">
+          <img
+            class="modal-choc-pic"
+            src="../img/modal-buy/choc-mix-mob.jpg"
+            alt="3 types of chocolate"
+          />
+          <button class="modal-buy-chocolate-button" type="button">
+            <span class="modal-chocolate-btn-txt">200 g</span>
+          </button>
+        </div>
+      </li>
+      <li>
+        <div class="modal-choc-container">
+          <img
+            class="modal-choc-pic"
+            src="../img/modal-buy/choc-bar-mob.jpg"
+            alt="bar of chocolate"
+          />
+          <button class="modal-buy-chocolate-button" type="button">
+            <span class="modal-chocolate-btn-txt">300 g</span>
+          </button>
+        </div>
+      </li>
+    </ul>
+    <form class="modal-form" name="modal_form" autocomplete="on">
+      <label class="modal-label" for="modal_name">Personal information</label>
+      <div class="form-wrapper">
+        <ul class="modal-buy-list">
+          <li>
+            <input
+              class="modal-input"
+              type="text"
+              name="modal_name"
+              id="modal_name"
+              placeholder="Name"
+              required
+            />
+          </li>
+          <li>
+            <input
+              class="modal-input"
+              type="text"
+              name="modal_name"
+              id="modal_name"
+              placeholder="Surname"
+              required
+            />
+          </li>
+        </ul>
+      </div>
+      <label class="modal-label" for="modal_email">Email</label>
+      <div class="form-wrapper">
+        <input
+          class="modal-input"
+          type="email"
+          name="modal_email"
+          id="modal_email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+      <label class="modal-label" for="modal_tel">Phone number</label>
+      <div class="tel-form-wrapper modal-input">
+        <svg class="form-icon" width="24" height="24">
+          <use href="../img/icons.svg#flag"></use>
+        </svg>
+        <span class="prefix">+380</span>
+        <input class="tel-input" type="tel" name="modal_tel" id="modal_tel" />
+      </div>
+      <label class="modal-label" for="modal_comment">Comment</label>
+      <textarea
+        class="modal-input-comment"
+        id="modal_comment"
+        rows="6"
+        placeholder="Enter text"
+      ></textarea>
+      <button type="submit" class="modal-buy-btn">Submit</button>
+    </form>
+  </div>
+</div>
