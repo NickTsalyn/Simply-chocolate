@@ -3,16 +3,21 @@
 
 
 .section-comp-container {
+    display: flex;
+    flex-direction: column;
+     gap: 24px;
+    margin: 0 auto;
     margin-bottom: 32px;
-    text-align: center;
+   /* text-align: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%;*/
     height: 204px;
 }
 
 .section-components-title {
-    margin-bottom: 24px;
+   /* margin-bottom: 24px;*/
+   /* display: flex;*/
     font-family: var(--primary-font);
     font-weight: 600;
     font-size: 20px;
@@ -27,6 +32,7 @@
 }
 
 .section-components-about {
+
     text-align: center;
     font-weight: 400;
     font-size: 14px;
@@ -41,7 +47,7 @@
 }
 
 .components-item {
-  
+  /*  display: flex;*/
     height: 270px;
 }
 
@@ -56,6 +62,10 @@
     display: flex;
     flex-direction: column;
     padding-top: 28px;
+    /*padding-left: 56px;
+    padding-bottom: 24px;
+    margin-right: 0;*/
+    align-items: center;
     margin-bottom: 24px;
     justify-content: center;
     background-color: transparent;  
@@ -113,8 +123,8 @@
 
 .front-item:hover .back-item,
 .front-item:focus .back-item {
-    opacity: 1;
-    transform: translateY( 0 100%);
+   /* opacity: 1;*/
+    transform: translate(0, 100%);
 }
 
 .back-item-title { 
@@ -167,9 +177,9 @@
 @media  screen and (min-width: 768px) {
     
     .section-comp-container {
-        
+        margin-bottom: 0;
         width: 486px;
-        justify-content: center;
+        
         align-items: center;
     }
     .section-components-title {
@@ -179,22 +189,22 @@
     .components-list {
         width: 704px;
         display: flex;
-        flex-basis: calc((100% - 64px ) / 2 ); ;
-       
-        
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+      /*  flex-basis: calc((100% - 64px ) / 2 ); */ 
     }
-    .components-item {
-        
-        width: calc((100% - 64px ) / 2 );
+    .components-item {  
+        width: calc((100% - 32px ) / 2 );
     }
     
   }
   
   @media only screen and (min-width: 1200px) {
     .components-list {
+        flex-wrap: nowrap;
         width: 1136px;
         gap: 20px;
-
     }
     
     .components-item {
