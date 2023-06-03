@@ -1,15 +1,8 @@
-@media only screen and (min-width: 320px) {
-    .container {
-     width: 90%;
-     max-width: 335px;
-   }
 
 
-.section-components {
-    background-color: #ffffff;
-}
+
+
 .section-comp-container {
-    
     margin-bottom: 32px;
     text-align: center;
     justify-content: center;
@@ -19,7 +12,6 @@
 }
 
 .section-components-title {
-    width: 100%;
     margin-bottom: 24px;
     font-family: var(--primary-font);
     font-weight: 600;
@@ -49,12 +41,12 @@
 }
 
 .components-item {
-    width: 100%;
+  
     height: 270px;
 }
 
 .front-item {
-    width: 100%;
+   
     height: 270px;   
     border-radius: 15px;
     background-color: var(--secondary-color);
@@ -89,7 +81,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     color: #ffffff;
 }
 
@@ -98,36 +90,36 @@
 }
 
 .front-item {
-    
+    position: relative;
     overflow: hidden;
 }
 
 .back-item {
+    height: 270px;
     padding: 28px;
     border-radius: 15px; 
-    border: #ffffff;  
-    position: relative;
+    background-color: #ffffff;  
+    position: absolute;
     opacity: 0;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
-    transform: translate(0, 100%);
+    transform: translate(0, -100%);
     transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
-        transition-duration: .5s;
+        transition-duration: 0.5s;
         transition-property: transform, opacity;  
 }
 
 .front-item:hover .back-item,
 .front-item:focus .back-item {
-    
-    transform: translateY( 0 0%);
+    opacity: 1;
+    transform: translateY( 0 100%);
 }
 
 .back-item-title { 
     font-size: 18px;
     line-height: 1.22;
-    line-height: 100%;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
@@ -170,28 +162,42 @@
     text-align: left;
     overflow: scroll;
 }
-}
 
-@media only screen and (min-width: 768px) {
+
+@media  screen and (min-width: 768px) {
     
     .section-comp-container {
+        
         width: 486px;
+        justify-content: center;
+        align-items: center;
     }
     .section-components-title {
         width: 411px;
-        
         justify-content: center;
     }
     .components-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px; 
+        width: 704px;
+        display: flex;
+        flex-basis: calc((100% - 64px ) / 2 ); ;
+       
+        
+    }
+    .components-item {
+        
+        width: calc((100% - 64px ) / 2 );
     }
     
-    
-
   }
   
   @media only screen and (min-width: 1200px) {
+    .components-list {
+        width: 1136px;
+        gap: 20px;
+
+    }
     
+    .components-item {
+        width: calc((100% - 60px ) / 4 );
+    }
   }
