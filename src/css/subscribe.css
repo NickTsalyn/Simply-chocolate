@@ -2,6 +2,7 @@
   padding-top: 62px;
   padding-bottom: 63px;
 }
+
 .subscribe-section {
   margin-left: auto;
   margin-right: auto;
@@ -61,12 +62,14 @@
   }
 }
 .subscribe-container {
+  /* max-width: 335px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
+
 h2.subscribe-title {
   max-width: 291px;
   color: #fff;
@@ -97,6 +100,10 @@ h2.subscribe-title {
     max-width: 467px;
     margin: 0;
   }
+
+  /* .subscribe-container {
+    max-width: 467px;
+  } */
 }
 
 .button-subscribe {
