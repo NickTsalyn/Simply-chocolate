@@ -1,5 +1,4 @@
 .section.subscribe-section {
-  height: 370px;
   padding-top: 62px;
   padding-bottom: 63px;
 }
@@ -68,9 +67,8 @@
   align-items: center;
   gap: 24px;
 }
-.subscribe-title {
+h2.subscribe-title {
   max-width: 291px;
-
   color: #fff;
 }
 
@@ -86,10 +84,16 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .subscribe-title {
+  h2.subscribe-title {
     width: 378px;
+    font-size: 24px;
+    line-height: 1.17;
   }
-  .subscribe-text {
+  p.subscribe-text {
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
     max-width: 467px;
     margin: 0;
   }
@@ -102,11 +106,11 @@
   color: #ffffff;
   background-color: var(--secondary-color);
   transform: color var(--transition-dur-timing-func),
-    beckground color var(--transition-dur-timing-func);
+    background-color var(--transition-dur-timing-func);
 }
 
 @media only screen and (min-width: 768px) {
-  .button.button-subscribe {
+  button.button-subscribe {
     font-size: 18px;
     line-height: 1.22;
     width: 172px;
