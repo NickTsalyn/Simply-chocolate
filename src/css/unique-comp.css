@@ -192,11 +192,19 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 32px;
-      /*  flex-basis: calc((100% - 64px ) / 2 ); */ 
+        
     }
-    .components-item {  
+
+    .components-item {     
         width: calc((100% - 32px ) / 2 );
     }
+    .components-item:nth-of-type(2) {
+        order: 1;
+    }
+    .components-item:nth-of-type(3) {
+        order: 2;
+    }
+
     
   }
   
@@ -210,4 +218,8 @@
     .components-item {
         width: calc((100% - 60px ) / 4 );
     }
+
+    .components-item:nth-of-type(4) {
+        order: 3;
   }
+}
