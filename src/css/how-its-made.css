@@ -1,8 +1,17 @@
+/* How its made styles */
 .how-made-title {
   margin-bottom: 32px;
 }
 .how-made-color {
   color: var(--secondary-color);
+}
+.how-made-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
 }
 .wrapper-video {
   max-width: 335px;
@@ -10,14 +19,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 20px;
   .player {
     width: 100%;
     border-radius: 15px;
 
     .video {
       height: 500px;
-      max-width: 100%;
+      width: 100%;
       border-radius: 15px;
       object-fit: cover;
     }
@@ -31,6 +39,38 @@
         left: calc(50%);
         transform: translate(-50%, -50%) scale(1);
         cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .how-made-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .wrapper-video {
+    max-width: 614px;
+    padding: 0;
+    .player {
+      .video {
+        height: 400px;
+        width: 614px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .how-made-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper-video {
+    max-width: 600px;
+    .player {
+      .video {
+        height: 400px;
+        width: 600px;
       }
     }
   }
@@ -49,8 +89,16 @@
 .how-made-list {
   display: flex;
   flex-direction: column;
-  gap: 18px 8px;
-  align-items: center;
+  gap: 18px;
+}
+@media only screen and (min-width: 1200px) {
+  .how-made-information {
+    width: 516px;
+    height: 400px;
+  }
+  .how-made-list {
+    gap: 24px;
+  }
 }
 .how-made-item {
   position: relative;
@@ -65,4 +113,17 @@
   background: #4c4c4c;
   border: 1px solid #eceded;
   border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .how-made-information {
+    width: 614px;
+    padding: 32px;
+  }
+  .how-made-text {
+    width: 350px;
+    margin-bottom: 28px;
+  }
+  .how-made-item {
+    width: 480px;
+  }
 }
