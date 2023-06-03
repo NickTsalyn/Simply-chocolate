@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
 
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -9,6 +10,7 @@
   text-transform: uppercase;
 
   gap: 4px;
+  outline: none;
 }
 
 .logo-text {
@@ -16,6 +18,8 @@
 }
 
 .logo-icon {
+  width: 21px;
+  height: 21px;
   stroke: var(--secondary-color);
   fill: var(--hover-btn-color);
 }
@@ -31,10 +35,77 @@
   padding-bottom: 14px;
 }
 
+.menu-link {
+  outline: none;
+  transition: color var(--transition-dur-timing-func);
+}
+
+.header-social-list-link {
+  display: flex;
+  outline: none;
+
+  transition: color var(--transition-dur-timing-func);
+}
+
+.header-social-list-link:hover,
+.header-social-list-link:focus {
+  color: var(--secondary-color);
+}
+
 .header-social-list-icon {
-  stroke: var(--primary-color);
+  stroke: currentColor;
   fill: transparent;
 }
+
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+  padding: 0;
+
+  color: var(--light-text-color);
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  transition: color var(--transition-dur-timing-func);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: var(--secondary-color);
+}
+
+.mobile-menu-close-icon {
+  stroke: currentColor;
+}
+
+.mobile-social-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--secondary-color);
+}
+
+/* .menu-link:::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--secondary-color);
+} */
 
 @media screen and (max-width: 1199px) {
   .menu {
@@ -47,27 +118,124 @@
 
   .mobile-menu {
     position: fixed;
-    width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: #1e1823;
+    right: 0;
 
-    opacity: 0;
-    visibility: hidden;
+    z-index: 1000;
+    background-color: var(--secondary-background-color);
+
     pointer-events: none;
 
-    transition: opacity var(--transition-dur-and-func),
-      visibility var(--transition-dur-and-func);
+    transform: translateX(100%);
+  }
+
+  .mobile-menu.is-open {
+    pointer-events: auto;
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .mobile-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 46px;
+    padding-top: 136px;
   }
 
   .mobile-menu-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
     border: none;
     background-color: transparent;
   }
+
   .mobile-menu-open-icon {
+    width: 28px;
+    height: 28px;
     stroke: var(--primary-color);
+  }
+
+  .mobile-menu-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mobile-menu-social-container {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--light-text-color);
+
+    gap: 24px;
+  }
+
+  .mobile-menu-link {
+    transition: color var(--transition-dur-timing-func);
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    outline: none;
+
+    color: var(--secondary-color);
+  }
+
+  .header-social-list-link {
+    color: var(--light-text-color);
+    transition: color var(--transition-dur-timing-func);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu-container {
+    padding-left: 85px;
+    padding-right: 81px;
+    padding-top: 156px;
+  }
+
+  .mobile-menu-social-container {
+    position: absolute;
+
+    left: 32px;
+    bottom: 24px;
+  }
+
+  .mobile-menu-open-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .mobile-menu-close-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-social-list-icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    fill: transparent;
   }
 }
 
@@ -76,9 +244,12 @@
     font-size: 18px;
     line-height: 1.11;
   }
-}
 
-@media screen and (min-width: 1200px) {
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -109,5 +280,10 @@
   .header-social-list {
     display: flex;
     gap: 18px;
+  }
+
+  .header-social-list-link {
+    color: var(--primary-color);
+    transition: color var(--transition-dur-timing-func);
   }
 }
