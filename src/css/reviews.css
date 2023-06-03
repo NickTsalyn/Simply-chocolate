@@ -1,16 +1,21 @@
 .reviews-first-part {
- color: #FD9222; 
+ color: #FD9222;
+ margin-bottom: 32px; 
 }
 
 .second-part {
  color: #111111; 
 }
 
-
-
-
-
+.reviews-container {
+  width: 100%;  
+  height: 404px;  
+}
 
 .reviews-button {
  background-color: tomato;
 }  
+
+.swiper-reviews-client {
+    
+}
