@@ -1,9 +1,5 @@
 /* npm run dev */
-.advantages {
-}
-/* .visually-hidden {
-    display: none;
-} */
+
 .advantages-container{
     
     background: #1E1823;
@@ -17,7 +13,7 @@
 }
 @media only screen and (min-width: 1200px) {
    .advantages-container{
-    padding: 50px 50px 51px 50px;
+    padding: 50px 
   }
 }
 
@@ -89,13 +85,10 @@ align-items: center;
 margin-bottom: 22px;
 }
 .advantages-pic{
-    fill:  #FD9222;
+    fill:  var(--secondary-color);
 }
 .advantages-title {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
+    
 line-height: 22px;
 /* identical to box height */
 
@@ -104,10 +97,7 @@ color: #FFFFFF;
 margin-bottom: 18px;
 }
 .advantages-article {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
+   
 line-height: 17px;
 letter-spacing: -0.02em;
 
