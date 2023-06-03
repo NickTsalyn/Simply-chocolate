@@ -21,19 +21,25 @@
 .advantages-ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* gap: 20px; */
     list-style-type: none;
 }
 @media only screen and (min-width: 768px) {
    .advantages-ul{
     /* column-gap: 60px;
     row-gap: 50px; */
-    gap:0;
+    /* gap:0; */
   }
 }
 @media only screen and (min-width: 1200px) {
    .advantages-ul{
     gap: 88px;
+  }
+}
+@media only screen and (max-width: 768px) {
+   .ad-sec{
+    margin-top: 38px;
+    margin-bottom: 20px;
   }
 }
 .advantages-li {
