@@ -1,8 +1,4 @@
 
-.container-reviews {
-  height: 404px;  
-}
-
  .first-part {
   color: #FD9222;
   padding-bottom: 32px; 
@@ -62,7 +58,11 @@ color: #111111;
 }
 
 
-.element-button {
+.client-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -71,4 +71,24 @@ color: #111111;
   border-radius: 100px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   margin-top: 18px;
+  text-align: center;
+}
+
+
+
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+}
+
+.swiper-wrapper {
+  position: relative;
 }
