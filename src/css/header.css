@@ -35,9 +35,36 @@
   padding-bottom: 14px;
 }
 
+.menu-item {
+  position: relative;
+}
+
 .menu-link {
   outline: none;
   transition: color var(--transition-dur-timing-func);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.menu-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 24px;
+  height: 1px;
+  border-radius: 2px;
+  transition: background-color var(--transition-dur-timing-func);
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+  background-color: var(--secondary-color);
 }
 
 .header-social-list-link {
@@ -90,23 +117,6 @@
   gap: 18px;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--secondary-color);
-}
-
-/* .menu-link:::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--secondary-color);
-} */
-
 @media screen and (max-width: 1199px) {
   .menu {
     display: none;
@@ -119,6 +129,7 @@
   .mobile-menu {
     position: fixed;
     height: 100%;
+    width: 220px;
     top: 0;
     right: 0;
 
@@ -133,7 +144,7 @@
   .mobile-menu.is-open {
     pointer-events: auto;
     transform: translateX(0);
-    transition: transform 250ms ease-in-out;
+    transition: transform var(--transition-dur-timing-func);
   }
 
   .mobile-menu-container {
@@ -145,6 +156,7 @@
     padding-left: 50px;
     padding-right: 46px;
     padding-top: 136px;
+    padding-bottom: 136px;
   }
 
   .mobile-menu-open {
@@ -187,16 +199,8 @@
 
     gap: 24px;
   }
-
-  .mobile-menu-link {
-    transition: color var(--transition-dur-timing-func);
-  }
-
-  .mobile-menu-link:hover,
-  .mobile-menu-link:focus {
-    outline: none;
-
-    color: var(--secondary-color);
+  .mobile-menu-list-item {
+    position: relative;
   }
 
   .header-social-list-link {
@@ -211,7 +215,9 @@
     padding-right: 81px;
     padding-top: 156px;
   }
-
+  .mobile-menu {
+    width: 290px;
+  }
   .mobile-menu-social-container {
     position: absolute;
 
