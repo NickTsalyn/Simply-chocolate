@@ -17,24 +17,14 @@
   height: 242px;
 }
 
-.swiper-slide {
-  width: 100%;
+.reviews-slide {
+  display: block; 
+  flex-direction: column;
   box-sizing: border-box;
   background: white;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   }
-
-
-
-
-
-
-.reviews-slide {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-}
 
 
 .reviews-slide-img {
@@ -45,10 +35,9 @@
   position: absolute;
   left: 72px;
   top: 0px;
-  width: 80px;
-  height: 80px;
   background-repeat: no-repeat;
   background-size: cover;
+
   
 }
 
@@ -70,4 +59,16 @@ color: #111111;
   text-align: center;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);     
+}
+
+
+.element-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  padding: 12px 28px;
+  background: #fafafa;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  margin-top: 18px;
 }
