@@ -80,6 +80,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-pagination {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .swiper-pagination {
+    padding-bottom: 128px;
+  }
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -95,6 +108,18 @@ swiper-container {
   position: static;
 }
 .section-products {
-  padding-bottom: 45px;
+  padding-bottom: 105px;
   position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-products {
+    padding-bottom: 145px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-products {
+    padding-bottom: 173px;
+  }
 }
