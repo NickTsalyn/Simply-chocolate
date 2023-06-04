@@ -1,0 +1,132 @@
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity var(--transition-dur-timing-func),
+    visibility var(--transition-dur-timing-func);
+}
+.button-subscribe:active .backdrop {
+  display: block;
+  pointer-events: none;
+}
+
+/* Modal window */
+
+.modal {
+  position: relative;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 100%;
+  max-width: 311px;
+
+  background-color: var(--primary-background-color);
+  border-radius: 15px;
+  border: none;
+
+  transition: transform var(--transition-dur-timing-func);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 539px;
+  }
+}
+
+.backdrop.is-hidden.modal {
+  opacity: 0;
+  transform: translate(-50%, -80%);
+}
+
+.close-modal {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  background-color: var(--primary-background-color);
+  border: none;
+  border-radius: 50%;
+  transition: background-color var(--transition-dur-timing-func);
+}
+
+.modal-icon {
+  stroke: var(--light-text-color);
+  transition: stroke var(--transition-dur-timing-func);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  background-color: var(--hover-btn-color);
+  /* outline: none; */
+}
+
+.close-modal:hover .modal-icon,
+.close-modal:focus .modal-icon {
+  stroke: liner-gradient rgba(241, 101, 41, 1) rgba(212, 69, 40, 1);
+}
+.overlay-img {
+  background-color: var(--secondary-background-color);
+}
+h2.modal-title {
+  text-align: start;
+}
+.orange-path {
+  color: var(--secondary-color);
+}
+.input {
+  position: relative;
+  width: 100%;
+  padding: 14px 18px;
+  /* width: 263px; */
+  height: 45px;
+  color: rgba(64, 64, 64, 0.3);
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  /* z-index: 0; */
+}
+plase .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100px;
+  height: 54px;
+  padding: 14px 22px;
+  color: #ffffff;
+  background-color: var(--secondary-color);
+  transform: color var(--transition-dur-timing-func),
+    background-color var(--transition-dur-timing-func);
+  /* z-index: 1; */
+}
+.close-button:hover,
+.close-button:focus {
+  color: var(--secondary-color);
+  background-color: var(--hover-btn-color);
+}
+@media only screen and (min-width: 768px) {
+  .input {
+    height: 52px;
+  }
+  .close-button {
+    width: 137px;
+    height: 52px;
+  }
+}
