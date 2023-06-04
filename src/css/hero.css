@@ -228,3 +228,24 @@ border var(--transition-dur-timing-func);
   stroke: var(--light-text-color);
   fill: var(--light-text-color);
 }
+
+.hero-scroll-icon use {
+  -webkit-animation: scrollDown 1.7s infinite;
+  animation: scrollDown 1.7s infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translate(0, -8px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 8px);
+    opacity: 0;
+  }
+}
