@@ -1,4 +1,9 @@
 
+
+
+
+
+
  .first-part {
   color: #FD9222;
   padding-bottom: 32px; 
@@ -59,10 +64,7 @@ color: #111111;
 
 
 .client-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -72,6 +74,7 @@ color: #111111;
   border: 1px solid rgba(17, 17, 17, 0.1);
   margin-top: 18px;
   text-align: center;
+  margin: 0 auto;
 }
 
 
