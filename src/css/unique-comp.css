@@ -23,9 +23,6 @@
 
 .section-components-about {
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28;
   width: 100%;
 }
 
@@ -73,7 +70,7 @@
 
 .front-item-name {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
@@ -166,8 +163,6 @@
 
 .back-item-about {
   max-height: 146px;
-  font-size: 14px;
-  line-height: 105%;
   text-align: left;
   overflow-y: scroll;
 }
