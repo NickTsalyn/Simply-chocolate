@@ -180,6 +180,7 @@ border var(--transition-dur-timing-func);
 .hero-scroll-link {
   align-items: center;
   display: flex;
+  gap: 14px;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(14/12);
@@ -201,8 +202,8 @@ border var(--transition-dur-timing-func);
 }
 
 .hero-scroll-icon {
-  margin-left: 14px;
-  padding-top: 6px;
+  /* margin-left: 14px; */
+  padding: 6px;
   width: 28px;
   height: 28px;
   border-radius: 50%;
