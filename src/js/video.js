@@ -7,7 +7,7 @@ const video = document.querySelector('.video'),
 function toggleVideoStatus() {
   if (video.paused) {
     video.play();
-    playBtnImg.src = 'img/How_its_made/play.svg';
+    playBtnImg.src = 'img/How_its_made/stop.svg';
   } else {
     video.pause();
     playBtnImg.src = 'img/How_its_made/play.svg';
