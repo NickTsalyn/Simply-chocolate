@@ -25,8 +25,13 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms;
+  border-radius: 15px;
 }
-
+@media only screen and (min-width: 768px) {
+  br {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) {
   .modal-container {
     width: 517px;
@@ -129,7 +134,7 @@
   .tel-input {
     min-width: 246px;
     min-height: 66px;
-    padding: 17px 24px 17px 177px;
+    padding: 17px 24px 17px 147px;
   }
 }
 .heading-container {
