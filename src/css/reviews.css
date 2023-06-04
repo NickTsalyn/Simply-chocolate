@@ -4,7 +4,6 @@
 
 .reviews-first-part {
  color: #FD9222;
- padding-bottom: 32px;
 }
 
 .second-part {
@@ -13,16 +12,64 @@
 
 
 .client-button {
- background-color: tomato;
+ box-sizing: border-box;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 12px 28px;
+ gap: 14px;
+ width: 165px;
+ height: 41px;
+ border: 1px solid #FD9222;
+ border-radius: 100px;
+ 
 }  
 
-.swiper-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
- 
+
+.swiper-slide {
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 
 
+.reviews-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  height: 242px; 
+  }
 
-
+  .reviews-text-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2px;
+   padding-top: 18px;
+  }
+.client-name {
+  width: 200px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  align-items: center;
+  color: #111111;
+}
+ .client-text {
+  height: 54px;  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.28;
+  color: rgba(17, 17, 17, 0.7);
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding-top: 24px;
+}
 
