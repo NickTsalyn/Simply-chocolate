@@ -16,8 +16,7 @@
   visibility: hidden;
 } */
 .modal-buy {
-  min-width: 311px;
-  width: 95%;
+  width: 311px;
   padding: 32px 24px;
   background-color: var(--primary-background-color);
   border-radius: 4px;
@@ -81,6 +80,13 @@
 .modal-close-icon {
   transition: fill var(--transition-dur-timing-func);
 }
+@media only screen and (min-width: 768px) {
+  .modal-choc-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
 .modal-choc-container {
   padding: 8px 16px;
   background: #ffffff;
@@ -91,6 +97,19 @@
   align-items: center;
   gap: 74px;
   margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-choc-container {
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    width: 160px;
+    height: 196px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal-choc-item {
+  }
 }
 .modal-choc-pic {
   margin-right: auto;
@@ -150,6 +169,14 @@ label {
   height: auto;
   background-color: var(--primary-background-color);
 }
+.card-form-wrapper {
+  position: relative;
+}
+.ccn-icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
 
 .modal-heading {
   text-transform: uppercase;
@@ -188,6 +215,7 @@ label {
 @media only screen and (min-width: minwidthpx) {
   .modal-buy-list {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 .modal-input {
