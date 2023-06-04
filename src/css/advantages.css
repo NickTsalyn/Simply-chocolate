@@ -1,0 +1,109 @@
+/* npm run dev */
+
+.advantages-container {
+  background: #1e1823;
+  padding-top: 20px;
+  padding-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .advantages-container {
+    padding: 50px 60px 85px 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages-container {
+    padding: 50px;
+  }
+}
+
+.advantages-ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  list-style-type: none;
+}
+@media only screen and (min-width: 768px) {
+  .advantages-ul {
+    /* column-gap: 60px;
+    row-gap: 50px; */
+    /* gap:0; */
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages-ul {
+    gap: 88px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ad-sec {
+    margin-top: 38px;
+    margin-bottom: 20px;
+  }
+}
+.advantages-li {
+  width: 308px;
+
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .advantages-li:first-child {
+    margin-right: 60px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages-li:first-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .advantages-li {
+    position: relative;
+  }
+  .ad-with-after::after {
+    content: '';
+    width: 124px;
+    height: 0px;
+    display: block;
+    position: absolute;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    top: 50%;
+    left: 264px;
+  }
+}
+.advantages-pic-container {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.advantages-pic {
+  fill: var(--secondary-color);
+}
+.advantages-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+.advantages-article {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+
+  color: rgba(255, 255, 255, 0.7);
+}
