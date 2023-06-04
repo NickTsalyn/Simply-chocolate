@@ -47,6 +47,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-background-color);
