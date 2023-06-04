@@ -10,11 +10,11 @@
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
-/* .is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-} */
+}
 .modal-buy {
   width: 311px;
   padding: 32px 24px;
@@ -33,10 +33,10 @@
     padding: 48px;
   }
 }
-/* .backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
   opacity: 0;
   transform: translate(-50% -90%);
-} */
+}
 .modal-close-btn {
   background-color: var(--primary-background-color);
   width: 24px;
@@ -146,28 +146,54 @@
 label {
   display: block;
 }
-.form-wrapper {
-  margin-bottom: 18px;
+.prefix-wrapper {
+  padding-right: 8px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+@media only screen and (min-width: 768px) {
+  .prefix-wrapper {
+    top: 17px;
+    left: 24px;
+    padding-right: 20px;
+  }
 }
 .tel-form-wrapper {
   position: relative;
-  display: flex;
-  padding-left: 0.5rem;
-  align-items: center;
-  overflow: hidden;
 }
-.form-icon {
-  position: absolute;
-  top: 45%;
-  left: 18px;
-  transform: translateY(-50%);
+.flag-icon {
   pointer-events: none;
+  margin-right: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .flag-icon {
+    margin-right: 18px;
+    width: 32px;
+    height: 32px;
+  }
 }
 .tel-input {
   width: 100%;
-  border: none;
   height: auto;
   background-color: var(--primary-background-color);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  display: flex;
+  outline-offset: -1px;
+  padding: 14px 18px 14px 106px;
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .tel-input {
+    min-width: 246px;
+    min-height: 66px;
+    padding: 17px 24px 17px 177px;
+  }
 }
 .card-form-wrapper {
   position: relative;
@@ -176,6 +202,14 @@ label {
   position: absolute;
   right: 12px;
   top: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .ccn-icon {
+    top: 18px;
+    right: 24px;
+    width: 44px;
+    height: 30px;
+  }
 }
 
 .modal-heading {
@@ -209,10 +243,9 @@ label {
 .modal-buy-list {
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
   column-gap: 21px;
 }
-@media only screen and (min-width: minwidthpx) {
+@media only screen and (min-width: 768px) {
   .modal-buy-list {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -227,9 +260,17 @@ label {
   display: flex;
   outline-offset: -1px;
   padding: 14px 18px;
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-input {
+    min-width: 246px;
+    min-height: 66px;
+  }
 }
 .modal-input:focus {
-  outline: 1px solid var(--primary-brand);
+  outline: 1px solid var(--secondary-color);
+  transition: outline var(--transition-dur-timing-func);
 }
 
 .modal-input-comment {
@@ -244,8 +285,8 @@ label {
   margin-bottom: 18px;
 }
 .modal-input-comment:focus {
-  outline: 1px solid var(--primary-brand);
-  transition: outline var(--transition-time);
+  outline: 1px solid var(--secondary-color);
+  transition: outline var(--transition-dur-timing-func);
 }
 .modal-buy-btn {
   width: 109px;
@@ -253,6 +294,12 @@ label {
   background-color: var(--secondary-color);
   color: #ffffff;
   border-radius: 100px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-btn {
+    width: 133px;
+    height: 45px;
+  }
 }
 .modal-buy-btn:hover,
 .modal-buy-btn:focus,
