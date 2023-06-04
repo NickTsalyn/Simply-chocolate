@@ -34,7 +34,7 @@
   --secondary-font: 'Montserrat Italic', sans-serif;
   --primary-color: #111111;
   --secondary-color: #fd9222;
-  --primary-background-color: #e2e2e2;
+  --primary-background-color: #fafafa;
   --secondary-background-color: #1e1823;
   --light-text-color: #ffffff;
   --hover-btn-color: #fcf1e0;
@@ -118,7 +118,7 @@ body {
 
 .section-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
@@ -135,7 +135,6 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  padding: 12px 28px;
   border-radius: 100px;
   border: none;
 }
