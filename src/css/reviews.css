@@ -1,9 +1,10 @@
 .reviews-container {  
-  height: 404px;  
+  height: 404px; 
 }
 
 .reviews-first-part {
  color: #FD9222;
+ padding-bottom: 32px;
 }
 
 .second-part {
@@ -26,7 +27,7 @@
 }  
 
 
-.swiper-slide {
+.swiper-slide {  
   width: 100%;
   box-sizing: border-box;
   background: white;
@@ -35,13 +36,7 @@
 }
 
 
-.reviews-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 32px;
-  height: 242px; 
-  }
+
 
   .reviews-text-wrapper {
    display: flex;
@@ -73,3 +68,18 @@
   padding-top: 24px;
 }
 
+.reviews-slide {
+ position: relative;  
+ display: block;
+ flex-direction: column;
+ align-items: center;
+ height: 242px; 
+    }
+
+.reviews-img {
+   position: absolute; 
+   background-repeat: repeat-y;
+   background-size: cover;
+   left: 100px;
+   top: -40px; 
+}
