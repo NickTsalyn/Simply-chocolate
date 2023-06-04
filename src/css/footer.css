@@ -51,6 +51,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+.footer-contacts-address {
+  font-style: normal;
+}
 @media only screen and (min-width: 768px) {
   .footer-contacts {
     margin-bottom: 50px;
@@ -183,7 +187,7 @@
   border: 1px solid #fd9222;
 
   opacity: 0;
-  transition:opacity var(----transition-dur-timing-func) ;
+  transition: opacity var(----transition-dur-timing-func);
 }
 .footer-nav-link:hover::after {
   opacity: 1;
