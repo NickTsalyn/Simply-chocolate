@@ -20,18 +20,18 @@
 @import url('./modal-subscribe.css');
 
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat';
   src: url('/src/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: 'Montserrat Italic';
+  font-family: 'Montserrat';
   src: url('/src/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('ttf');
 }
 
 :root {
-  --primary-font: 'Montserrat Regular', sans-serif;
-  --secondary-font: 'Montserrat Italic', sans-serif;
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
   --primary-color: #111111;
   --secondary-color: #fd9222;
   --primary-background-color: #fafafa;
@@ -45,6 +45,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -99,18 +103,18 @@ body {
 }
 
 .section {
-  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
   .section {
-    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .section {
-    padding-top: 128px;
+    padding-bottom: 128px;
   }
 }
 
