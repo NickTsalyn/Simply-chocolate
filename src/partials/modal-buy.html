@@ -111,7 +111,16 @@
           </svg>
           <span class="prefix">+380</span>
         </div>
-        <input class="tel-input" type="tel" name="modal_tel" id="modal_tel" />
+        <input
+          placeholder="Phone number"
+          required
+          pattern="^\d{10}$"
+          title="xxx-xxx-xx-xx"
+          class="tel-input"
+          type="tel"
+          name="modal_tel"
+          id="modal_tel"
+        />
       </div>
       <label class="modal-label" for="ccn">Card Number:</label>
       <div class="card-form-wrapper">

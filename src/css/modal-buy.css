@@ -10,13 +10,15 @@
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
+} */
 .modal-buy {
   width: 311px;
+  height: 994px;
+  overflow-y: auto;
   padding: 32px 24px;
   background-color: var(--primary-background-color);
   border-radius: 4px;
@@ -252,7 +254,7 @@ label {
   }
 }
 .modal-input {
-  width: 100%;
+  width: 100;
   height: auto;
   background-color: var(--primary-background-color);
   border: 1.5px solid rgba(17, 17, 17, 0.05);
