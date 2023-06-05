@@ -62,7 +62,6 @@
   }
 }
 .subscribe-container {
-  /* max-width: 335px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +71,7 @@
 
 h2.subscribe-title {
   max-width: 291px;
-  color: #fff;
+  color: var(--light-text-color);
 }
 
 .subscribe-text {
@@ -83,7 +82,7 @@ h2.subscribe-title {
   margin-right: auto;
 
   text-align: center;
-  color: #fff;
+  color: var(--light-text-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -100,17 +99,13 @@ h2.subscribe-title {
     max-width: 467px;
     margin: 0;
   }
-
-  /* .subscribe-container {
-    max-width: 467px;
-  } */
 }
 
 .button-subscribe {
   width: 128px;
   height: 41px;
 
-  color: #ffffff;
+  color: var(--light-text-color);
   background-color: var(--secondary-color);
   transform: color var(--transition-dur-timing-func),
     background-color var(--transition-dur-timing-func);
@@ -128,5 +123,5 @@ h2.subscribe-title {
 .button-subscribe:hover,
 .button-subscribe:focus {
   color: var(--secondary-color);
-  background-color: #fcf1e0;
+  background-color: var(--hover-btn-color);
 }
