@@ -7,8 +7,8 @@
   background-color: rgb(128, 128, 128, 0.4);
   backdrop-filter: blur(1px);
   z-index: 100;
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
@@ -86,11 +86,7 @@
 
 .modal-close-icon:hover,
 .modal-close-icon:focus {
-  stroke: linear-gradient(
-    90deg,
-    rgba(212, 69, 40, 1) 100%,
-    rgba(241, 101, 41, 1) 100%
-  );
+  stroke: #fd9222;
 }
 
 .modal-close-btn:hover,
@@ -268,4 +264,22 @@
 .modal-buy-btn:active {
   background-color: var(--hover-btn-color);
   color: var(--secondary-color);
+}
+
+.modal-input::placeholder,
+.tel-input::placeholder,
+.modal-input-comment::placeholder {
+  height: 17px;
+  font-size: 14px;
+  line-height: 1.21;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-input::placeholder,
+  .tel-input::placeholder,
+  .modal-input-comment::placeholder {
+    height: 22px;
+    font-size: 18px;
+  }
 }
