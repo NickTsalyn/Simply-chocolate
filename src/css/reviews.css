@@ -1,13 +1,29 @@
 .section-reviews {
   position: relative;
 }
-.container-reviews {
-  min-width: 280px;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+.section-reviews .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 148px;
 }
+@media only screen and (min-width: 768px) {
+  .section-reviews .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-reviews .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 220px;
+  }
+}
+
 .section-title-reviews {
   margin-bottom: 50px;
 }
@@ -15,20 +31,41 @@
   color: var(--secondary-color);
 }
 .review-slide {
-  height: 275px;
   width: 335px;
   padding-top: 42px;
+  margin-bottom: 65px;
 }
 @media only screen and (min-width: 768px) {
   .review-slide {
     width: 344px;
-    height: 285px;
+    margin-bottom: 95px;
     gap: 16px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .review-slide {
     width: 360px;
+    gap: 28px;
+    margin-bottom: 94px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .swiper-slide.review-slide {
+    width: 344px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .swiper-slide.review-slide {
+    width: 360px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .swiper-wrapper.container-reviews {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .swiper-wrapper.container-reviews {
     gap: 28px;
   }
 }
@@ -44,6 +81,17 @@
   justify-content: end;
   position: relative;
   z-index: 1;
+  margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-text-wrapper {
+    min-width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .reviews-text-wrapper {
+    min-width: 360px;
+  }
 }
 .reviews-img-wrapper {
   width: 100%;
