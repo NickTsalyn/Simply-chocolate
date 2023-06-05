@@ -1,21 +1,21 @@
 <!-- Order/Buy modal -->
 <div class="backdrop js-overlay-modal" id="2">
-  <div  class="modal-container" data-modal="2">
+  <div class="modal-container" data-modal="2">
     <button type="button" class="modal-close-btn">
-        <svg class="modal-close-icon" width="24" height="24">
-          <use href="img/icons.svg#close-button"></use>
-        </svg>      
-    </button> 
-      <h2 class="section-title modal-heading"
-        >leave a review<br/> about<span class="mod-headning-highlighted"> our chocolate</span
-        ></h2 >
-    </div>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="img/icons.svg#close-button"></use>
+      </svg>
+    </button>
+    <h2 class="section-title modal-heading">
+      leave a review<br />
+      about<span class="mod-headning-highlighted"> our chocolate</span>
+    </h2>
     <form class="modal-form" name="modal_form" autocomplete="on">
       <div class="form-wrapper">
         <input
           class="modal-input"
           type="text"
-          name="modal_name"         
+          name="modal_name"
           placeholder="Name"
           required
         />
@@ -24,7 +24,7 @@
         <input
           class="modal-input"
           type="email"
-          name="modal_email"          
+          name="modal_email"
           required
           placeholder="Enter your email"
         />
@@ -39,7 +39,7 @@
         <input
           class="tel-input"
           type="tel"
-          name="modal_tel"          
+          name="modal_tel"
           placeholder="Phone number"
           required
           pattern="^\d{10}$"
@@ -47,11 +47,13 @@
         />
       </div>
       <textarea
-        class="modal-input-comment"        
+        class="modal-input-comment"
         rows="6"
         placeholder="Enter text"
       ></textarea>
-      <button type="submit" class="button modal-buy-btn js-modal-close">Send</button>
+      <button type="submit" class="button modal-buy-btn js-modal-close">
+        Send
+      </button>
     </form>
   </div>
 </div>
