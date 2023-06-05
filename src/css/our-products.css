@@ -13,7 +13,7 @@ swiper {
   border-radius: 15px;
 } */
 @media only screen and (min-width: 768px) {
-  .swiper-slide {
+  .swiper-slide.product-slide {
     width: 270px !important;
   }
 }
