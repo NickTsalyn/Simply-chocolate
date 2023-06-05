@@ -10,6 +10,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   loop: false,
+  effect: 'fade',
 
   // Breakpoints
   breakpoints: {
