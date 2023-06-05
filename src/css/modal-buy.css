@@ -42,7 +42,7 @@
   opacity: 0;
   transform: translate(-50% -90%);
 }
-.modal-close-btn {
+.modal-buy-close-btn {
   background-color: var(--primary-background-color);
   width: 24px;
   height: 24px;
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
-  .modal-close-btn {
+  .modal-buy-close-btn {
     width: 28px;
     height: 28px;
     top: 24px;
@@ -67,15 +67,15 @@
     stroke: var(--primary-color);
   }
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus,
-.modal-close-btn:active {
+.modal-buy-close-btn:hover,
+.modal-buy-close-btn:focus,
+.modal-buy-close-btn:active {
   background-color: var(--hover-btn-color);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus,
-.modal-close-btn:active .modal-close-icon {
+.modal-buy-close-btn:hover,
+.modal-buy-close-btn:focus,
+.modal-buy-close-btn:active .modal-buy-close-icon {
   fill: linear-gradient(
     90deg,
     rgba(212, 69, 40, 1) 100%,
@@ -83,7 +83,7 @@
   );
 }
 
-.modal-close-icon {
+.modal-buy-close-icon {
   transition: fill var(--transition-dur-timing-func);
 }
 @media only screen and (min-width: 768px) {
