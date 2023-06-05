@@ -1,12 +1,13 @@
 .container-reviews {
   min-width: 280px;
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
-  gap: 32px;
 }
-
+.section-title-reviews {
+  margin-bottom: 50px;
+}
 .second-part-reviews {
   color: var(--secondary-color);
 }
@@ -29,7 +30,6 @@
   }
 }
 .reviews-text-wrapper {
-  box-sizing: border-box;
   max-width: 335px;
   height: 200px;
   background: #ffffff;
@@ -69,6 +69,7 @@
 .text-description {
   color: rgba(17, 17, 17, 0.7);
 }
+
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -111,6 +112,7 @@
   .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
 }
+
 .swiper,
 swiper-container {
   position: static;
