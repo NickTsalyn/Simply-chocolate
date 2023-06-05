@@ -20,7 +20,7 @@
 }
 @media only screen and (min-width: 768px) {
   .advantages-ul {
-    gap: 32;
+    gap: 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -31,7 +31,7 @@
 .advantages-li {
   max-width: 336px;
   height: 100%;
-  padding: 0 28px 18px 0;
+  padding-right: 28px;
   box-sizing: border-box;
 }
 @media only screen and (min-width: 768px) {
@@ -49,6 +49,7 @@
     width: 326px;
   }
   .advantages-li {
+    padding-right: 18px;
     position: relative;
   }
   .advantages-ul {
