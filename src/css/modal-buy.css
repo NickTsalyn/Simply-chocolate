@@ -7,14 +7,16 @@
   background-color: rgb(128, 128, 128, 0.4);
   backdrop-filter: blur(1px);
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
 }
+
 .modal-buy {
   width: 311px;
   height: 994px;
@@ -29,7 +31,12 @@
   max-height: calc(100vh - 50px);
   overflow-y: auto;
 }
-
+.modal-buy.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  transition: var(--transition-dur-timing-func);
+}
 @media only screen and (min-width: 768px) {
   .modal-buy {
     width: 609px;
