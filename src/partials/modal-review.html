@@ -3,7 +3,7 @@
   <div id="modal-review" class="modal-container">
     <button type="button" class="modal-close-btn" js-modal-close>
         <svg class="modal-close-icon" width="12" height="12">
-          <use href="../img/icons.svg#close-button"></use>
+          <use href="img/icons.svg#close-button"></use>
         </svg>
       </button>
     </button>
@@ -39,7 +39,7 @@
       <div class="tel-form-wrapper">
         <div class="prefix-wrapper">
           <svg class="flag-icon" width="24" height="24">
-            <use href="../img/icons.svg#flag"></use>
+            <use href="img/icons.svg#flag"></use>
           </svg>
           <span class="prefix">+380</span>
         </div>
@@ -49,6 +49,9 @@
           name="modal_tel"
           id="modal_tel"
           placeholder="Phone number"
+          required
+          pattern="^\d{10}$"
+          title="xxx-xxx-xx-xx"
         />
       </div>
       <textarea
