@@ -9,6 +9,8 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 
+  loop: false,
+
   // Breakpoints
   breakpoints: {
     375: {
