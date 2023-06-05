@@ -10,11 +10,11 @@
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
-/* .is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-} */
+}
 .modal-buy {
   width: 311px;
   height: 994px;
