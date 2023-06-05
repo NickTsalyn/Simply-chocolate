@@ -1,3 +1,6 @@
+.section-reviews {
+  position: relative;
+}
 .container-reviews {
   min-width: 280px;
   display: flex;
