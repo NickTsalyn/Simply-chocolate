@@ -124,22 +124,6 @@ h2.modal-heading {
   color: var(--secondary-color);
 }
 
-/* MODAL Form */
-.modal-form {
-  position: absolute;
-  top: calc(50%);
-  left: calc(50%);
-  transform: translate(-50%, -40%);
-
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding-top: 0;
-  z-index: 102;
-  /* width: 263px; */
-
-  /* height: 327px; */
-}
 @media only screen and (min-width: 768px) {
   .modal-form {
     gap: 18px;
