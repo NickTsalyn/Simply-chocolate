@@ -5,13 +5,13 @@ swiper {
 .swiper-wrapper {
   gap: 18px;
 }
-.swiper-slide {
+/* .swiper-slide {
   width: 100%;
   box-sizing: border-box;
   background: white;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-}
+} */
 @media only screen and (min-width: 768px) {
   .swiper-slide {
     width: 270px !important;
@@ -22,6 +22,11 @@ swiper {
   flex-direction: column;
   align-items: center;
   padding: 32px 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 .section-title-products {
   margin-bottom: 32px;
