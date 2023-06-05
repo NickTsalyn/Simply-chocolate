@@ -318,3 +318,12 @@ label {
   background-color: var(--hover-btn-color);
   color: var(--secondary-color);
 }
+.modal-input-comment::placeholder,
+.modal-input::placeholder,
+.tel-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
