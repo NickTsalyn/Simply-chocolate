@@ -1,38 +1,45 @@
-<div class="backdrop js-overlay-modal" id="modal-subscribe">
-  <div class="modal">
+<div class="overlay js-overlay-modal" id="modal-subscribe">
+  <div class="modal" data-modal="modal-subscribe">
     <div class="overlay-img">
-      <picture alt="lots of chocolate">
-        <!-- Desktop and tablet screen -->
+      <picture class="modal-img">
         <source
           media="(min-width: 768px)"
           srcset="
-            ../img/modal-subsctibe/img-1desc-tabl@1x .webp,
-            ../img/modal-subsctibe/img-1desc-tabl@2x .webp "
+            img/modal-subscribe/img-1desc-tabl@1x.webp,
+            img/modal-subscribe/img-1desc-tabl@2x.webp
+          "
           type="image/webp"
         />
         <source
           media="(min-width: 768px)"
           srcset="
-            ../img/modal-subsctibe/img-1desc-tabl@1x .jpg,
-            ../img/modal-subsctibe/img-1desc-tabl@2x .jpg"
+            img/modal-subscribe/img-1desc-tabl@1x.jpg,
+            img/modal-subscribe/img-1desc-tabl@2x.jpg
+          "
           type="image/jpg"
         />
         <!-- Mobile screen -->
         <source
-          media="(max-width: 767px)"
+          media="(max-width: 376px)"
           srcset="
-            ../img/modal-subsctibe/img-1mob@1x .webp,
-            ../img/modal-subsctibe/img-1mob@2x .webp
+            img/modal-subscribe/img-1mob@1x.webp,
+            img/modal-subscribe/img-1mob@2x.webp
           "
           type="image/webp"
         />
         <source
-          media="(max-width: 767px)"
+          media="(max-width: 376px)"
           srcset="
-            ../img/modal-subsctibe/img-1mob@1x .jpg,
-            ../img/modal-subsctibe/img-1mob@2x .jpg
+            img/modal-subscribe/img-1mob@1x.jpg,
+            img/modal-subscribe/img-1mob@2x.jpg
           "
           type="image/jpg"
+        />
+        <img
+          src="img/modal-subscribe/img-1desc-tabl@1x.jpg"
+          alt="Lots of chocolate"
+          width="311"
+          height="169"
         />
       </picture>
     </div>
@@ -41,20 +48,22 @@
         <use href="../img/icons.svg#close-button"></use>
       </svg>
     </button>
-    <h2 class="section-title modal-title">
-      explore our <span class="orange-path">new chocolate</span> first!
-    </h2>
-    <form class="modal-form">
-      <input
-        class="input"
-        type="email"
-        id="user_email"
-        placeholder="Enter your email"
-        required
-      />
-      <button class="button close-button js-modal-close" type="submit">
-        Submit
-      </button>
+    <div class="modal-text">
+      <h2 class="section-title modal-title">
+        explore our <span class="orange-path">new chocolate</span> first!
+      </h2>
+      <form class="modal-form">
+        <input
+          class="input"
+          type="email"
+          id="user_email"
+          placeholder="Enter your email"
+          required
+        />
+        <button class="button close-button js-modal-close" type="submit">
+          Submit
+        </button>
+    </div>
     </form>
   </div>
 </div>
