@@ -10,11 +10,11 @@
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
+} */
 .modal-buy {
   width: 311px;
   height: 994px;
@@ -304,6 +304,7 @@ label {
   background-color: var(--secondary-color);
   color: #ffffff;
   border-radius: 100px;
+  border: none;
 }
 @media only screen and (min-width: 768px) {
   .modal-buy-btn {
