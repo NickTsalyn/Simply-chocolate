@@ -1,7 +1,7 @@
 <!-- Order/Buy modal -->
-<div class="backdrop js-overlay-modal" id="modal-buy">
-  <div class="modal-buy" data-modal="modal-buy">
-    <button type="button" class="modal-close-btn">
+<div class="backdrop" data-modal="modal-1">
+  <div class="modal-buy">
+    <button type="button" class="modal-close-btn" data-modal-close>
       <svg class="modal-close-icon" width="24" height="24">
         <use href="img/icons.svg#close-button"></use>
       </svg>
@@ -146,7 +146,9 @@
           placeholder="Enter text"
         ></textarea>
       </label>
-      <button type="submit" class="modal-buy-btn">Submit</button>
+      <button type="submit" class="modal-buy-btn" data-modal-close>
+        Submit
+      </button>
     </form>
   </div>
 </div>

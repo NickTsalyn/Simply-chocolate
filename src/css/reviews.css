@@ -59,16 +59,6 @@
     width: 360px !important;
   }
 }
-@media only screen and (min-width: 768px) {
-  .swiper-wrapper.container-reviews {
-    gap: 16px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .swiper-wrapper.container-reviews {
-    gap: 28px;
-  }
-}
 .reviews-text-wrapper {
   max-width: 335px;
   height: 200px;
