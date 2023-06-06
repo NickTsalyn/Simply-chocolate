@@ -44,7 +44,6 @@
     overflow-y: none;
   }
 }
-
 .modal-buy-close-btn {
   background-color: var(--primary-background-color);
   width: 24px;

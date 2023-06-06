@@ -1,3 +1,4 @@
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -12,7 +13,6 @@
   transition: visibility var(--transition-dur-timing-func),
     opacity var(--transition-dur-timing-func);
 }
-
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;

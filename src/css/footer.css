@@ -32,7 +32,6 @@
     margin-bottom: 32px;
   }
 }
-
 .footer-header-text {
   display: block;
 
@@ -69,7 +68,6 @@
   .footer-contacts {
     gap: 50px;
     min-width: 280px;
-   
   }
 }
 @media only screen and (min-width: 1200px) {
