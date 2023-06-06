@@ -1,12 +1,18 @@
-.overlay {
+.backdrop {
   opacity: 0;
   visibility: hidden;
+
   position: fixed;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
+
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 10;
 
@@ -14,40 +20,40 @@
     opacity var(--transition-dur-timing-func);
 }
 
-.overlay.active {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
 }
 
 .modal {
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
+
   position: absolute;
   top: calc(50%);
   left: calc(50%);
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -50%);
 
   width: 311px;
 
   background-color: var(--primary-background-color);
   border-radius: 15px;
   border: none;
-  overflow: hidden;
   z-index: 20;
 
   transition: transform var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func),
     opacity var(--transition-dur-timing-func);
 }
-.modal.active {
+/* .backdrop.is-open .modal {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%);
   transition: transform var(--transition-dur-timing-func);
-}
+} */
 
 @media only screen and (min-width: 767px) {
-  .modal.active {
+  .modal {
     width: 538px;
     height: 412px;
   }
