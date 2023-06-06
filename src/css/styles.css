@@ -18,6 +18,7 @@
 @import url('./modal-buy.css');
 @import url('./modal-review.css');
 @import url('./modal-subscribe.css');
+@import url('./fonts.css');
 
 @font-face {
   font-family: 'Montserrat';
