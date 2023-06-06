@@ -1,8 +1,9 @@
-<div class="overlay js-overlay-modal" id="modal-subscribe">
-  <div class="modal" data-modal="modal-subscribe">
+
+<div class="backdrop" data-modal="modal-3">
+  <div class="modal">
     <div class="overlay-img">
-      <button class="close-modal js-modal-close" type="submit">
-      <svg class="modal-icon" width="12" height="12">
+      <button class="close-modal" type="submit" data-modal-close>
+      <svg class="modal-icon" width="24" height="24">
         <use href="img/icons.svg#close-button"></use>
       </svg>
     </button>     
@@ -18,7 +19,7 @@
           placeholder="Enter your email"
           required
         />
-        <button class="button close-button js-modal-close" type="submit">
+        <button class="button close-button" type="submit" data-modal-close>
           Submit
         </button>
     </div>

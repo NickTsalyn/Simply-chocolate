@@ -10,16 +10,27 @@
     padding-bottom: 50px;
   }
 }
-
+.footer-container {
+}
+.footer-display-container {
+  margin-bottom: 32px;
+}
 @media only screen and (min-width: 768px) {
   .footer-display-container {
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
   }
 }
-
-.footer-heading-container {
-  margin-bottom: 32px;
+@media only screen and (min-width: 1200px) {
+  .footer-display-container {
+    margin-bottom: 58px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-heading-container {
+    margin-bottom: 32px;
+  }
 }
 .footer-header-text {
   display: block;
@@ -45,10 +56,9 @@
   color: var(--secondary-color);
 }
 .footer-contacts {
-  margin-bottom: 32px;
-
   display: flex;
   justify-content: space-between;
+  max-height: 72px;
 }
 
 .footer-contacts-address {
@@ -56,11 +66,8 @@
 }
 @media only screen and (min-width: 768px) {
   .footer-contacts {
-    margin-bottom: 50px;
-
     gap: 50px;
     min-width: 280px;
-    max-height: 72px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -85,11 +92,11 @@
 .footer-contacts-link {
   width: 100%;
   color: var(--light-text-color);
+  /* transition: color var(----transition-dur-timing-func); */
 }
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
+/* .footer-contacts-link:hover,.footer-contacts-link:focus{
   color: var(--secondary-color);
-}
+} */
 .footer-contacts-item:first-child {
   margin-bottom: 4px;
 }
@@ -102,12 +109,24 @@
     gap: 18px;
   }
 }
-
-.footer-social-list-link {
-  color: var(--light-text-color);
-  transform: color var(--transition-dur-timing-func);
+.footer-social-list-item {
+  display: block;
 }
-.footer-social-link:hover,
+.footer-social-list-link {
+  display: block;
+  color: var(--light-text-color);
+  height: 22px;
+
+  transform: color var(----transition-dur-timing-func);
+}
+@media only screen and (min-width: 768px) {
+  .footer-social-list-link {
+   height: 24px;
+  }
+}
+.footer-social-link:hover {
+  color: var(--secondary-color);
+}
 .footer-social-link:focus {
   color: var(--secondary-color);
 }
@@ -116,7 +135,9 @@
   fill: transparent;
   transition: stroke var(--transition-dur-timing-func);
 }
-.footer-social-list-icon:hover,
+.footer-social-list-icon:hover {
+  stroke: var(--secondary-color);
+}
 .footer-social-list-icon:focus {
   stroke: var(--secondary-color);
 }
@@ -179,7 +200,8 @@
   border: 1px solid #fd9222;
 
   opacity: 0;
-  transition: opacity var(--transition-dur-timing-func);
+  transition: opacity var(----transition-dur-timing-func);
+
 }
 .footer-nav-link:hover::after {
   opacity: 1;
