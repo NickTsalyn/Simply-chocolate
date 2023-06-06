@@ -86,7 +86,10 @@
   width: 100%;
   color: var(--light-text-color);
 }
-
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--secondary-color);
+}
 .footer-contacts-item:first-child {
   margin-bottom: 4px;
 }

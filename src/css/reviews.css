@@ -188,16 +188,24 @@ swiper-container {
 
 .client-button {
   display: block;
+  width: 165px;
+  height: 41px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   padding: 12px 28px;
   background: #fafafa;
   border-radius: 100px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--secondary-color);
   margin-top: 18px;
   text-align: center;
   margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .client-button {
+    width: 222px;
+    height: 50px;
+  }
 }
 
 .client-button:hover,
