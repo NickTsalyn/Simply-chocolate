@@ -61,6 +61,10 @@
   justify-content: space-between;
   max-height: 72px;
 }
+
+.footer-contacts-address {
+  font-style: normal;
+}
 @media only screen and (min-width: 768px) {
   .footer-contacts {
     gap: 50px;
@@ -86,10 +90,7 @@
   font-weight: 500;
   color: var(--light-text-color);
 }
-.footer-contacts-list {
-}
-.footer-contacts-item {
-}
+
 .footer-contacts-link {
   width: 100%;
   color: var(--light-text-color);
@@ -134,7 +135,7 @@
 .footer-social-list-icon {
   stroke: var(--light-text-color);
   fill: transparent;
-  transition: stroke var(----transition-dur-timing-func);
+  transition: stroke var(--transition-dur-timing-func);
 }
 .footer-social-list-icon:hover {
   stroke: var(--secondary-color);
@@ -142,10 +143,7 @@
 .footer-social-list-icon:focus {
   stroke: var(--secondary-color);
 }
-.footer-social-list-link {
-}
-.footer-social-list-icon {
-}
+
 .footer-nav-container {
   position: relative;
 
@@ -166,8 +164,7 @@
 
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer-nav-list {
-}
+
 @media only screen and (min-width: 768px) {
   .footer-nav-list {
     display: flex;
@@ -178,8 +175,6 @@
   }
 }
 
-.footer-nav-item {
-}
 .footer-nav-item:not(:last-child) {
   margin-bottom: 18px;
 }
@@ -189,7 +184,7 @@
   font-weight: 500;
   line-height: 1.14;
   color: var(--light-text-color);
-  transition: color var(----transition-dur-timing-func);
+  transition: color var(--transition-dur-timing-func);
 }
 .footer-nav-link:hover,
 .footer-nav-link:focus {
@@ -208,6 +203,7 @@
 
   opacity: 0;
   transition: opacity var(----transition-dur-timing-func);
+
 }
 .footer-nav-link:hover::after {
   opacity: 1;
