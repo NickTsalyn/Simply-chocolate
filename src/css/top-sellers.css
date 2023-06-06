@@ -1,0 +1,105 @@
+/* Title */
+.ts-title {
+  margin-bottom: 50px;
+}
+
+.ts-title-color {
+  color: var(--secondary-color);
+}
+
+/* Img list */
+
+.ts-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.ts-img {
+  border-radius: 15px;
+}
+
+/* Buy now btn */
+
+.ts-buy-btn {
+  width: 162px;
+  height: 50px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--light-text-color);
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+  border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .ts-buy-btn {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.ts-buy-btn:hover,
+.ts-buy-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--hover-btn-color);
+}
+
+/* Section desc */
+
+.ts-info-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ts-text {
+  width: 306px;
+  height: 90px;
+} 
+
+@media only screen and (min-width: 1200px) {
+  .ts-text {
+    width: 407px;
+    height: 72px;
+  } 
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .adpt-hidden {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+.ts-mob-list-first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.ts-mob-list-second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .adpt-conrainer-mob {
+    display: none;
+  }
+}
+
+/* Desctop */
+
+@media only screen and (max-width: 767px) {
+  .adpt-container {
+    display: none;
+  }
+}
