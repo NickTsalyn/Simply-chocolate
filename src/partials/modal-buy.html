@@ -1,13 +1,9 @@
 <!-- Order/Buy modal -->
-<div class="backdrop is-hidden js-overlay-modal" data-modal="1">
-  <div id="modal-buy" class="modal-buy">
-    <button
-      type="submit"
-      class="modal-close-btn js-modal-close"
-      data-modal-close
-    >
-      <svg class="modal-close-icon" width="12" height="12">
-        <use href="../img/icons.svg#close-button"></use>
+<div class="backdrop js-overlay-modal" id="modal-buy">
+  <div class="modal-buy" data-modal="modal-buy">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="img/icons.svg#close-button"></use>
       </svg>
     </button>
     <strong class="modal-heading"
@@ -18,13 +14,13 @@
         <div class="modal-choc-container">
           <img
             class="modal-choc-pic"
-            src="../img/modal-buy/choc-piece_84.jpg"
+            src="img/modal-buy/choc-piece_84.jpg"
             alt="piece of chocolate"
             srcset="
-              ../img/modal-buy/choc-piece_84.jpg   84w,
-              ../img/modal-buy/choc-piece_168.jpg 168w,
-              ../img/modal-buy/choc-piece_120.jpg 120w,
-              ../img/modal-buy/choc-piece_240.jpg 240w
+              img/modal-buy/choc-piece_84.jpg   84w,
+              img/modal-buy/choc-piece_168.jpg 168w,
+              img/modal-buy/choc-piece_120.jpg 120w,
+              img/modal-buy/choc-piece_240.jpg 240w
             "
             sizes="(min-width: 768px) 120px, (min-width: 320px) 84px, 100vw"
           />
@@ -37,13 +33,13 @@
         <div class="modal-choc-container">
           <img
             class="modal-choc-pic"
-            src="../img/modal-buy/choc-mix_84.jpg"
+            src="img/modal-buy/choc-mix_84.jpg"
             alt="3 types of chocolate"
             srcset="
-              ../img/modal-buy/choc-mix_84.jpg   84w,
-              ../img/modal-buy/choc-mix_168.jpg 168w,
-              ../img/modal-buy/choc-mix_120.jpg 120w,
-              ../img/modal-buy/choc-mix_240.jpg 240w
+              img/modal-buy/choc-mix_84.jpg   84w,
+              img/modal-buy/choc-mix_168.jpg 168w,
+              img/modal-buy/choc-mix_120.jpg 120w,
+              img/modal-buy/choc-mix_240.jpg 240w
             "
             sizes="(min-width: 768px) 120px, (min-width: 320px) 84px, 100vw"
           />
@@ -57,13 +53,13 @@
           <img
             class="modal-choc-pic"
             srcset="
-              ../img/modal-buy/choc-bar_84.jpg   84w,
-              ../img/modal-buy/choc-bar_168.jpg 168w,
-              ../img/modal-buy/choc-bar_120.jpg 120w,
-              ../img/modal-buy/choc-bar_240.jpg 240w
+              img/modal-buy/choc-bar_84.jpg   84w,
+              img/modal-buy/choc-bar_168.jpg 168w,
+              img/modal-buy/choc-bar_120.jpg 120w,
+              img/modal-buy/choc-bar_240.jpg 240w
             "
             sizes="(min-width: 768px) 120px, (min-width: 320px) 84px, 100vw"
-            src="../img/modal-buy/choc-bar_84.jpg"
+            src="img/modal-buy/choc-bar_84.jpg"
             alt="bar of chocolate"
           />
           <button class="modal-buy-chocolate-button" type="button">
@@ -72,33 +68,29 @@
         </div>
       </li>
     </ul>
-    <form class="modal-form" name="modal_form" autocomplete="on">
-      <div class="form-wrapper">
-        <label class="modal-label" for="modal_name">Personal information</label>
-        <ul class="modal-buy-list">
-          <li>
-            <input
-              class="modal-input"
-              type="text"
-              name="modal_name"
-              placeholder="Name"
-              required
-            />
-          </li>
-          <li>
-            <input
-              class="modal-input"
-              type="text"
-              name="modal_name"
-              placeholder="Surname"
-              required
-            />
-          </li>
-        </ul>
-      </div>
+    <form class="modal-form-buy" name="modal_form" autocomplete="on">
+      <label class="modal-label" for="modal_name">
+        <span class="input-desc">Personal information</span>
+        <div class="name-wrapper">
+          <input
+            class="modal-input"
+            type="text"
+            name="modal_name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="modal-input"
+            type="text"
+            name="modal_name"
+            placeholder="Surname"
+            required
+          />
+        </div>
+      </label>
 
-      <label class="modal-label" for="modal_email">Email</label>
-      <div class="form-wrapper">
+      <label class="modal-label" for="modal_email">
+        <span class="input-desc">Email</span>
         <input
           class="modal-input"
           type="email"
@@ -106,49 +98,54 @@
           required
           placeholder="Enter your email"
         />
-      </div>
-      <label class="modal-label" for="modal_tel">Phone number</label>
-      <div class="tel-form-wrapper">
-        <div class="prefix-wrapper">
-          <svg class="flag-icon" width="24" height="24">
-            <use href="../img/icons.svg#flag"></use>
-          </svg>
-          <span class="prefix">+380</span>
+      </label>
+      <label class="modal-label" for="modal_tel">
+        <span class="input-desc">Phone number</span>
+        <div class="tel-form-wrapper">
+          <div class="prefix-wrapper">
+            <svg class="flag-icon" width="24" height="24">
+              <use href="img/icons.svg#flag"></use>
+            </svg>
+            <span class="prefix">+380</span>
+          </div>
+          <input
+            placeholder="Phone number"
+            required
+            pattern="^\d{10}$"
+            title="xxx-xx-xx"
+            class="tel-input"
+            type="tel"
+            name="modal_tel"
+            id="modal_tel"
+          />
         </div>
-        <input
-          placeholder="Phone number"
-          required
-          pattern="^\d{10}$"
-          title="xxx-xxx-xx-xx"
-          class="tel-input"
-          type="tel"
-          name="modal_tel"
-          id="modal_tel"
-        />
-      </div>
-      <label class="modal-label" for="ccn">Card Number:</label>
-      <div class="card-form-wrapper">
-        <input
-          class="modal-input"
-          id="ccn"
-          type="tel"
-          inputmode="numeric"
-          pattern="[0-9\s]{13,19}"
-          autocomplete="cc-number"
-          maxlength="19"
-          placeholder="Enter card"
-        />
-        <svg class="ccn-icon" width="32" height="21">
-          <use href="../img/icons.svg#mastercard"></use>
-        </svg>
-      </div>
-      <label class="modal-label" for="modal_comment">Comment</label>
-      <textarea
-        class="modal-input-comment"
-        id="modal_comment"
-        rows="6"
-        placeholder="Enter text"
-      ></textarea>
+      </label>
+      <label class="modal-label" for="ccn">
+        <span class="input-desc">Card Number:</span>
+        <div class="card-form-wrapper">
+          <input
+            class="modal-input"
+            id="ccn"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            autocomplete="cc-number"
+            maxlength="19"
+            placeholder="Enter card"
+          />
+          <svg class="ccn-icon" width="32" height="21">
+            <use href="../img/icons.svg#mastercard"></use>
+          </svg>
+        </div>
+      </label>
+      <label class="modal-label" for="modal_comment">
+        <span class="input-desc">Comment</span>
+        <textarea
+          class="modal-input-comment"
+          rows="6"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
       <button type="submit" class="modal-buy-btn">Submit</button>
     </form>
   </div>
