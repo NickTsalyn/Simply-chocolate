@@ -121,7 +121,7 @@
 }
 @media only screen and (min-width: 768px) {
   .footer-social-list-link {
-   height: 24px;
+    height: 24px;
   }
 }
 .footer-social-link:hover {
@@ -167,15 +167,19 @@
   .footer-nav-list {
     display: flex;
     gap: 24px;
-
-    max-width: 532px;
-    max-height: 16px;
   }
 }
 
 .footer-nav-item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
+
+@media only screen and (max-width: 767px) {
+  .footer-nav-item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
 .footer-nav-link {
   position: relative;
 
@@ -201,7 +205,6 @@
 
   opacity: 0;
   transition: opacity var(----transition-dur-timing-func);
-
 }
 .footer-nav-link:hover::after {
   opacity: 1;
