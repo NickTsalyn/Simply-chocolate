@@ -20,16 +20,6 @@
 @import url('./modal-subscribe.css');
 @import url('./fonts.css');
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('ttf');
-}
-
 :root {
   --primary-font: 'Montserrat', sans-serif;
   --secondary-font: 'Montserrat', sans-serif;
