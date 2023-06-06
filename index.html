@@ -16,7 +16,7 @@
     
     <link rel="icon" href="/simply-chocolate/assets/favicon-40e4499d.svg" type="image/svg+xml" />
     <script type="module" crossorigin src="/simply-chocolate/assets/index-f8511838.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-658b6285.css">
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-ed0bde3c.css">
   </head>
   <body>
     <!-- Daryna -->
@@ -156,7 +156,7 @@
       <!-- Іван Гладченко -->
       <section class="hero-section section container">
   <div class="hero-container">
-    <h1 class="visually-hidden"></h1>
+    <h1 class="visually-hidden">Simply chocolate</h1>
     <h2 class="hero-slogan">
       Treat yourself or a loved one to our finest ingredients for a moment of
       pure delight!
@@ -166,7 +166,7 @@
         <button
           class="button hero-buy-btn js-open-modal"
           type="button"
-          data-model="1"
+          data-model="modal-buy"
         >
           Buy now
         </button>
@@ -835,8 +835,7 @@
     <button
       class="client-button js-open-modal"
       type="button"
-      data-modal="2"
-      data-modal-open
+      data-modal="modal-review"
     >
       Leave a review
     </button>
@@ -858,7 +857,7 @@
     <button
       class="button-subscribe button js-open-modal"
       type="button"
-      data-modal="modal-subsctibe"
+      data-modal="modal-subscribe"
     >
       Subscribe
     </button>
@@ -950,15 +949,11 @@
     </footer>
     <!-- Mykola Pavlikha -->
     <!-- Order/Buy modal -->
-<div class="backdrop is-hidden js-overlay-modal" data-modal="1">
-  <div id="modal-buy" class="modal-buy">
-    <button
-      type="submit"
-      class="modal-close-btn js-modal-close"
-      data-modal-close
-    >
-      <svg class="modal-close-icon" width="12" height="12">
-        <use href="../img/icons.svg#close-button"></use>
+<div class="backdrop js-overlay-modal" id="modal-buy">
+  <div class="modal-buy" data-modal="modal-buy">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/simply-chocolate/assets/icons-f13547a7.svg#close-button"></use>
       </svg>
     </button>
     <strong class="modal-heading"
@@ -969,14 +964,9 @@
         <div class="modal-choc-container">
           <img
             class="modal-choc-pic"
-            src="../img/modal-buy/choc-piece_84.jpg"
+            src="/simply-chocolate/assets/choc-piece_84-c49ec956.jpg"
             alt="piece of chocolate"
-            srcset="
-              ../img/modal-buy/choc-piece_84.jpg   84w,
-              ../img/modal-buy/choc-piece_168.jpg 168w,
-              ../img/modal-buy/choc-piece_120.jpg 120w,
-              ../img/modal-buy/choc-piece_240.jpg 240w
-            "
+            srcset="/simply-chocolate/assets/choc-piece_84-c49ec956.jpg 84w, /simply-chocolate/assets/choc-piece_168-fd7fceaa.jpg 168w, /simply-chocolate/assets/choc-piece_120-a109b512.jpg 120w, /simply-chocolate/assets/choc-piece_240-047e9077.jpg 240w"
             sizes="(min-width: 768px) 120px, (min-width: 320px) 84px, 100vw"
           />
           <button class="modal-buy-chocolate-button" type="button">
@@ -988,14 +978,9 @@
         <div class="modal-choc-container">
           <img
             class="modal-choc-pic"
-            src="../img/modal-buy/choc-mix_84.jpg"
+            src="/simply-chocolate/assets/choc-mix_84-9d823240.jpg"
             alt="3 types of chocolate"
-            srcset="
-              ../img/modal-buy/choc-mix_84.jpg   84w,
-              ../img/modal-buy/choc-mix_168.jpg 168w,
-              ../img/modal-buy/choc-mix_120.jpg 120w,
-              ../img/modal-buy/choc-mix_240.jpg 240w
-            "
+            srcset="/simply-chocolate/assets/choc-mix_84-9d823240.jpg 84w, /simply-chocolate/assets/choc-mix_168-aae336b5.jpg 168w, /simply-chocolate/assets/choc-mix_120-ad1387b6.jpg 120w, /simply-chocolate/assets/choc-mix_240-ee689074.jpg 240w"
             sizes="(min-width: 768px) 120px, (min-width: 320px) 84px, 100vw"
           />
           <button class="modal-buy-chocolate-button" type="button">
@@ -1007,14 +992,9 @@
         <div class="modal-choc-container">
           <img
             class="modal-choc-pic"
-            srcset="
-              ../img/modal-buy/choc-bar_84.jpg   84w,
-              ../img/modal-buy/choc-bar_168.jpg 168w,
-              ../img/modal-buy/choc-bar_120.jpg 120w,
-              ../img/modal-buy/choc-bar_240.jpg 240w
-            "
+            srcset="/simply-chocolate/assets/choc-bar_84-6fc837fd.jpg 84w, /simply-chocolate/assets/choc-bar_168-232303b6.jpg 168w, /simply-chocolate/assets/choc-bar_120-1f0179d9.jpg 120w, /simply-chocolate/assets/choc-bar_240-93f3a07e.jpg 240w"
             sizes="(min-width: 768px) 120px, (min-width: 320px) 84px, 100vw"
-            src="../img/modal-buy/choc-bar_84.jpg"
+            src="/simply-chocolate/assets/choc-bar_84-6fc837fd.jpg"
             alt="bar of chocolate"
           />
           <button class="modal-buy-chocolate-button" type="button">
@@ -1023,33 +1003,29 @@
         </div>
       </li>
     </ul>
-    <form class="modal-form" name="modal_form" autocomplete="on">
-      <div class="form-wrapper">
-        <label class="modal-label" for="modal_name">Personal information</label>
-        <ul class="modal-buy-list">
-          <li>
-            <input
-              class="modal-input"
-              type="text"
-              name="modal_name"
-              placeholder="Name"
-              required
-            />
-          </li>
-          <li>
-            <input
-              class="modal-input"
-              type="text"
-              name="modal_name"
-              placeholder="Surname"
-              required
-            />
-          </li>
-        </ul>
-      </div>
+    <form class="modal-form-buy" name="modal_form" autocomplete="on">
+      <label class="modal-label" for="modal_name">
+        <span class="input-desc">Personal information</span>
+        <div class="name-wrapper">
+          <input
+            class="modal-input"
+            type="text"
+            name="modal_name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="modal-input"
+            type="text"
+            name="modal_name"
+            placeholder="Surname"
+            required
+          />
+        </div>
+      </label>
 
-      <label class="modal-label" for="modal_email">Email</label>
-      <div class="form-wrapper">
+      <label class="modal-label" for="modal_email">
+        <span class="input-desc">Email</span>
         <input
           class="modal-input"
           type="email"
@@ -1057,49 +1033,54 @@
           required
           placeholder="Enter your email"
         />
-      </div>
-      <label class="modal-label" for="modal_tel">Phone number</label>
-      <div class="tel-form-wrapper">
-        <div class="prefix-wrapper">
-          <svg class="flag-icon" width="24" height="24">
-            <use href="../img/icons.svg#flag"></use>
-          </svg>
-          <span class="prefix">+380</span>
+      </label>
+      <label class="modal-label" for="modal_tel">
+        <span class="input-desc">Phone number</span>
+        <div class="tel-form-wrapper">
+          <div class="prefix-wrapper">
+            <svg class="flag-icon" width="24" height="24">
+              <use href="/simply-chocolate/assets/icons-f13547a7.svg#flag"></use>
+            </svg>
+            <span class="prefix">+380</span>
+          </div>
+          <input
+            placeholder="Phone number"
+            required
+            pattern="^\d{10}$"
+            title="xxx-xx-xx"
+            class="tel-input"
+            type="tel"
+            name="modal_tel"
+            id="modal_tel"
+          />
         </div>
-        <input
-          placeholder="Phone number"
-          required
-          pattern="^\d{10}$"
-          title="xxx-xxx-xx-xx"
-          class="tel-input"
-          type="tel"
-          name="modal_tel"
-          id="modal_tel"
-        />
-      </div>
-      <label class="modal-label" for="ccn">Card Number:</label>
-      <div class="card-form-wrapper">
-        <input
-          class="modal-input"
-          id="ccn"
-          type="tel"
-          inputmode="numeric"
-          pattern="[0-9\s]{13,19}"
-          autocomplete="cc-number"
-          maxlength="19"
-          placeholder="Enter card"
-        />
-        <svg class="ccn-icon" width="32" height="21">
-          <use href="../img/icons.svg#mastercard"></use>
-        </svg>
-      </div>
-      <label class="modal-label" for="modal_comment">Comment</label>
-      <textarea
-        class="modal-input-comment"
-        id="modal_comment"
-        rows="6"
-        placeholder="Enter text"
-      ></textarea>
+      </label>
+      <label class="modal-label" for="ccn">
+        <span class="input-desc">Card Number:</span>
+        <div class="card-form-wrapper">
+          <input
+            class="modal-input"
+            id="ccn"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            autocomplete="cc-number"
+            maxlength="19"
+            placeholder="Enter card"
+          />
+          <svg class="ccn-icon" width="32" height="21">
+            <use href="../img/icons.svg#mastercard"></use>
+          </svg>
+        </div>
+      </label>
+      <label class="modal-label" for="modal_comment">
+        <span class="input-desc">Comment</span>
+        <textarea
+          class="modal-input-comment"
+          rows="6"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
       <button type="submit" class="modal-buy-btn">Submit</button>
     </form>
   </div>
@@ -1107,9 +1088,9 @@
 
     <!--  -->
     <!-- Order/Buy modal -->
-<div class="backdrop js-overlay-modal" id="2">
-  <div class="modal-container" data-modal="2">
-    <button type="button" class="modal-close-btn">
+<div class="overlay js-overlay-modal" id="modal-review">
+  <div class="modal-container" data-modal="modal-review">
+    <button type="button" class="modal-close-btn js-modal-close">
       <svg class="modal-close-icon" width="24" height="24">
         <use href="/simply-chocolate/assets/icons-f13547a7.svg#close-button"></use>
       </svg>
