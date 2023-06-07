@@ -101,6 +101,9 @@
 .footer-contacts-item:first-child {
   margin-bottom: 4px;
 }
+.social-block {
+  display: block;
+}
 .footer-contacts-social {
   display: flex;
   gap: 14px;
