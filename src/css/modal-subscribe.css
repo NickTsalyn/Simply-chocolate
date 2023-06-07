@@ -195,5 +195,7 @@ h2.modal-title {
   .close-modal {
     width: 28px;
     height: 28px;
+    top: 24px;
+    right: 24px;
   }
 }
