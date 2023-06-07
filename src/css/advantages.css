@@ -34,11 +34,11 @@
   padding-right: 28px;
   box-sizing: border-box;
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .advantages-li {
     height: 244px;
   }
-}
+} */
 .advantages-text {
   display: flex;
   flex-direction: column;
