@@ -12,7 +12,7 @@
   transition: opacity var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func);
 }
-.backdrop.active {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
 }
@@ -31,7 +31,7 @@
   max-height: calc(100vh - 50px);
   overflow-y: auto;
 }
-.modal-buy.active {
+.modal-buy.is-open {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%);
@@ -42,13 +42,8 @@
     max-width: 609px;
     padding: 48px;
     overflow-y: none;
-    /* max-height: 1058; */
   }
 }
-/* .backdrop.is-hidden .modal {
-  opacity: 0;
-  transform: translate(-50% -90%);
-} */
 .modal-buy-close-btn {
   background-color: var(--primary-background-color);
   width: 24px;
@@ -56,8 +51,8 @@
   border-radius: 50%;
   border: none;
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 20px;
+  right: 20px;
   display: flex;
   padding: 0;
   justify-content: center;
@@ -65,6 +60,14 @@
   transition: background-color var(--transition-dur-timing-func);
   stroke: var(--primary-color);
 }
+
+.modal-buy-close-btn:hover,
+.modal-buy-close-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--hover-btn-color);
+  transition: var(--transition-dur-timing-func);
+}
+
 @media only screen and (min-width: 768px) {
   .modal-buy-close-btn {
     width: 28px;
@@ -73,25 +76,7 @@
     right: 24px;
   }
 }
-/* .modal-buy-close-btn:hover,
-.modal-buy-close-btn:focus,
-.modal-buy-close-btn:active {
-  background-color: var(--hover-btn-color);
-} */
 
-/* .modal-buy-close-btn:hover,
-.modal-buy-close-btn:focus,
-.modal-buy-close-btn:active .modal-buy-close-icon {
-  fill: linear-gradient(
-    90deg,
-    rgba(212, 69, 40, 1) 100%,
-    rgba(241, 101, 41, 1) 100%
-  );
-} */
-
-/* .modal-buy-close-icon {
-  transition: fill var(--transition-dur-timing-func);
-} */
 .modal-choc-list {
   display: flex;
   flex-direction: column;
@@ -134,7 +119,6 @@
   flex-direction: row;
   justify-content: center;
   padding: 6px 16px;
-  width: 73px;
   height: 29px;
   background-color: var(--primary-background-color);
   border: 1px solid rgba(17, 17, 17, 0.1);

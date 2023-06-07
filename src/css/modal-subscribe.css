@@ -1,53 +1,48 @@
-.overlay {
-  opacity: 0;
-  visibility: hidden;
+.backdrop {
   position: fixed;
-
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 100;
+  opacity: 0;
 
   transition: visibility var(--transition-dur-timing-func),
     opacity var(--transition-dur-timing-func);
 }
-
-.overlay.active {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
 }
 
 .modal {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
+
   top: calc(50%);
   left: calc(50%);
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -50%);
 
   width: 311px;
 
   background-color: var(--primary-background-color);
   border-radius: 15px;
   border: none;
-  overflow: hidden;
-  z-index: 20;
+  z-index: 101;
 
   transition: transform var(--transition-dur-timing-func),
     visibility var(--transition-dur-timing-func),
     opacity var(--transition-dur-timing-func);
 }
-.modal.active {
-  opacity: 1;
-  visibility: visible;
+
+.modal.is-open {
   transform: translate(-50%, -50%);
   transition: transform var(--transition-dur-timing-func);
 }
 
 @media only screen and (min-width: 767px) {
-  .modal.active {
+  .modal {
     width: 538px;
     height: 412px;
   }
@@ -88,10 +83,10 @@
 .close-modal {
   position: absolute;
   top: 14px;
-  right: 15px;
+  right: 14px;
   width: 24px;
   height: 24px;
-
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,12 +138,22 @@ h2.modal-title {
   padding: 14px 18px;
 
   height: 45px;
-  color: rgba(64, 64, 64, 0.3);
+  color: var(--primary-color);
 
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
 }
+
+.input:focus {
+  outline: 1px solid var(--secondary-color);
+  transition: outline var(--transition-dur-timing-func);
+}
+
+.input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
 .close-button {
   position: absolute;
 
@@ -167,6 +172,7 @@ h2.modal-title {
 .close-button:focus {
   color: var(--secondary-color);
   background-color: var(--hover-btn-color);
+  transition: var(--transition-dur-timing-func);
 }
 @media only screen and (min-width: 768px) {
   .modal-form {
@@ -188,9 +194,5 @@ h2.modal-title {
   .close-modal {
     width: 28px;
     height: 28px;
-  }
-  .modal-icon {
-    width: 14px;
-    height: 14px;
   }
 }

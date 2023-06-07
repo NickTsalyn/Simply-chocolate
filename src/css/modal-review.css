@@ -1,4 +1,4 @@
-.overlay {
+.backdrop {
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -8,13 +8,13 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 100;
 
   transition: visibility var(--transition-dur-timing-func),
     opacity var(--transition-dur-timing-func);
 }
 
-.overlay.active {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
 }
@@ -25,12 +25,12 @@
   min-height: 471px;
   padding: 32px 24px;
 
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0; */
+  /* visibility: hidden; */
   position: absolute;
   top: calc(50%);
   left: calc(50%);
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -50%);
 
   background-color: var(--primary-background-color);
   border-radius: 15px;
@@ -42,9 +42,9 @@
     visibility var(--transition-dur-timing-func),
     opacity var(--transition-dur-timing-func);
 }
-.modal-container.active {
+.modal-container.is-open {
   opacity: 1;
-  visibility: visible;
+  /* visibility: visible; */
   transform: translate(-50%, -90%);
   transition: transform var(--transition-dur-timing-func);
 }
@@ -77,8 +77,8 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--transition-dur-timing-func);
-  cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
   .modal-close-btn {
     width: 28px;
@@ -117,6 +117,7 @@ h2.modal-heading {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-bottom: 18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -233,6 +234,7 @@ h2.modal-heading {
 .modal-buy-btn:active {
   background-color: var(--hover-btn-color);
   color: var(--secondary-color);
+  transition: var(--transition-dur-timing-func);
 }
 
 .modal-input-review::placeholder,

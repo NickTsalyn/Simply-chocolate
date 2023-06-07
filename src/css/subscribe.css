@@ -124,4 +124,5 @@ h2.subscribe-title {
 .button-subscribe:focus {
   color: var(--secondary-color);
   background-color: var(--hover-btn-color);
+  transition: var(--transition-dur-timing-func);
 }
