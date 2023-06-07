@@ -7,6 +7,28 @@
   height: 204px;
 }
 
+@media only screen and (min-width: 768px) {
+  .section-comp-container {
+    margin-bottom: 50px;
+  }
+}
+
+.section-components {
+  padding-top: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-components {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-components {
+    padding-top: 128px;
+  }
+}
+
 .section-components-title {
   font-family: var(--primary-font);
   font-weight: 600;
