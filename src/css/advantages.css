@@ -1,7 +1,10 @@
 /* npm run dev */
 
+.advantages {
+  background-color: #1e1823;
+}
+
 .advantages-container {
-  background: #1e1823;
   padding-top: 20px;
 
   padding-bottom: 20px;

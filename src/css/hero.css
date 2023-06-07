@@ -30,45 +30,53 @@
 
 @media only screen and (min-width: 768px) {
   .hero-container {
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
-        url(/img/hero/hero_tab@1x.webp);
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/hero_tab@1x.webp);
     padding: 671px 40px 40px 40px;
     max-width: 1199px;
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-container {
-          background-image: linear-gradient(180deg,
-                  rgba(17, 17, 17, 0) 0%,
-                  rgba(17, 17, 17, 0.4) 100%),
-              url(/img/hero/hero_tab@2x.webp);
-      }
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(/img/hero/hero_tab@2x.webp);
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
-    .hero-container {
-        background-image: linear-gradient(180deg,
-                rgba(17, 17, 17, 0) 0%,
-                rgba(17, 17, 17, 0.4) 100%),
-            url(/img/hero/hero_desk@1x.webp);
-        padding: 381px 40px 40px 40px;
-    }
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/hero_desk@1x.webp);
+    padding: 381px 40px 40px 40px;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero-container {
-            background-image: linear-gradient(180deg,
-                    rgba(17, 17, 17, 0) 0%,
-                    rgba(17, 17, 17, 0.4) 100%),
-                url(/img/hero/hero_desk@2x.webp);
-        }
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(/img/hero/hero_desk@2x.webp);
     }
+  }
 }
 
 .hero-slogan {
@@ -83,7 +91,7 @@
 @media only screen and (min-width: 768px) {
   .hero-slogan {
     font-size: 28px;
-    line-height: calc(34/28);
+    line-height: calc(34 / 28);
     max-width: 484px;
   }
 }
@@ -106,7 +114,7 @@
   }
 
   .hero-list li:last-child {
-      margin-left: auto;
+    margin-left: auto;
   }
 }
 
@@ -115,8 +123,8 @@
   min-width: 180px;
   color: var(--light-text-color);
   background-color: var(--secondary-color);
-  transition: color var(--transition-dur-timing-func), 
-  background-color var(--transition-dur-timing-func);
+  transition: color var(--transition-dur-timing-func),
+    background-color var(--transition-dur-timing-func);
 }
 
 @media only screen and (min-width: 375px) {
@@ -149,7 +157,7 @@
   border: 1px solid #ffffff;
   border-radius: 100px;
   transition: color var(--transition-dur-timing-func),
-border var(--transition-dur-timing-func);
+    border var(--transition-dur-timing-func);
 }
 
 @media only screen and (min-width: 375px) {
@@ -159,10 +167,10 @@ border var(--transition-dur-timing-func);
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-how-its-made {
-        min-width: 183px;
-        padding: 14px 40px;
-    }
+  .hero-how-its-made {
+    min-width: 183px;
+    padding: 14px 40px;
+  }
 }
 
 .hero-how-its-made:hover,
@@ -183,7 +191,7 @@ border var(--transition-dur-timing-func);
   gap: 14px;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(14/12);
+  line-height: calc(14 / 12);
   min-width: 107px;
   color: var(--light-text-color);
   transition: color var(--transition-dur-timing-func);
@@ -191,8 +199,8 @@ border var(--transition-dur-timing-func);
 
 @media only screen and (min-width: 768px) {
   .hero-scroll-link {
-  font-size: 14px;
-  line-height: calc(18/14);
+    font-size: 14px;
+    line-height: calc(18 / 14);
   }
 }
 
@@ -210,7 +218,7 @@ border var(--transition-dur-timing-func);
   background-color: var(--light-text-color);
   fill: var(--secondary-color);
   transition: background-color var(--transition-dur-timing-func),
-  fill var(--transition-dur-timing-func);
+    fill var(--transition-dur-timing-func);
   /* stroke: var(--secondary-color); */
 }
 
