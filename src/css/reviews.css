@@ -204,4 +204,5 @@ swiper-container {
   border-radius: 100px;
   background: #fd9222;
   color: var(--light-text-color);
+  transition: var(--transition-dur-timing-func);
 }
