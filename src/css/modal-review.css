@@ -219,7 +219,9 @@ h2.modal-heading {
 }
 
 .modal-buy-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 93px;
   height: 41px;
   padding: 12px 28px;
