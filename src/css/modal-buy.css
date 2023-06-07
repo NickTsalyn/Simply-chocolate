@@ -295,6 +295,7 @@ label {
 .modal-buy-btn {
   width: 109px;
   height: 41px;
+  font-weight: 600;
   background-color: var(--secondary-color);
   color: #ffffff;
   border-radius: 100px;
