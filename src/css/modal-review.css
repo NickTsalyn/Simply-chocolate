@@ -1,7 +1,6 @@
-
 .backdrop {
   opacity: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
 
   top: 0;
@@ -31,7 +30,7 @@
   position: absolute;
   top: calc(50%);
   left: calc(50%);
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -50%);
 
   background-color: var(--primary-background-color);
   border-radius: 15px;
@@ -78,8 +77,8 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--transition-dur-timing-func);
-  cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
   .modal-close-btn {
     width: 28px;
@@ -118,6 +117,7 @@ h2.modal-heading {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-bottom: 18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,6 +234,7 @@ h2.modal-heading {
 .modal-buy-btn:active {
   background-color: var(--hover-btn-color);
   color: var(--secondary-color);
+  transition: var(--transition-dur-timing-func);
 }
 
 .modal-input-review::placeholder,

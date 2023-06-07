@@ -92,11 +92,12 @@
 .footer-contacts-link {
   width: 100%;
   color: var(--light-text-color);
-  /* transition: color var(----transition-dur-timing-func); */
 }
-/* .footer-contacts-link:hover,.footer-contacts-link:focus{
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
   color: var(--secondary-color);
-} */
+  transition: color var(--transition-dur-timing-func);
+}
 .footer-contacts-item:first-child {
   margin-bottom: 4px;
 }
@@ -112,6 +113,7 @@
 .footer-social-list-item {
   display: block;
 }
+
 .footer-social-list-link {
   display: block;
   color: var(--light-text-color);

@@ -51,8 +51,8 @@
   border-radius: 50%;
   border: none;
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 20px;
+  right: 20px;
   display: flex;
   padding: 0;
   justify-content: center;
@@ -60,6 +60,14 @@
   transition: background-color var(--transition-dur-timing-func);
   stroke: var(--primary-color);
 }
+
+.modal-buy-close-btn:hover,
+.modal-buy-close-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--hover-btn-color);
+  transition: var(--transition-dur-timing-func);
+}
+
 @media only screen and (min-width: 768px) {
   .modal-buy-close-btn {
     width: 28px;
@@ -111,7 +119,6 @@
   flex-direction: row;
   justify-content: center;
   padding: 6px 16px;
-  width: 73px;
   height: 29px;
   background-color: var(--primary-background-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
