@@ -63,19 +63,19 @@
 }
 
 .modal-close-btn {
-  /* background-color: var(--primary-background-color); */
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: none;
   position: absolute;
   top: 14px;
   right: 14px;
-  display: flex;
+  width: 24px;
+  height: 24px;
   padding: 0;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
   transition: background-color var(--transition-dur-timing-func);
 }
 
@@ -89,14 +89,18 @@
 }
 
 .modal-close-icon {
-  transition: fill var(--transition-dur-timing-func);
+  transition: stroke var(--transition-dur-timing-func);
   stroke: var(--primary-color);
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focus,
-.modal-close-btn:active .modal-close-icon {
-  stroke: var(--hover-btn-color);
+.modal-close-btn:focus {
+  background-color: var(--hover-btn-color);
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  stroke: var(--secondary-color);
 }
 
 h2.modal-heading {

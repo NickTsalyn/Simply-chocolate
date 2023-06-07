@@ -31,7 +31,8 @@
   color: var(--secondary-color);
 }
 .review-slide {
-  width: 335px;
+  min-width: 280px;
+  /* max-width: 335px; */
   padding-top: 42px;
   margin-bottom: 65px;
 }
@@ -44,7 +45,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .review-slide {
-    width: 360px;
+    max-width: 360px;
     gap: 28px;
     margin-bottom: 94px;
   }
