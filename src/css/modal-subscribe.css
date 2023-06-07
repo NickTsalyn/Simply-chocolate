@@ -52,6 +52,7 @@
   }
 }
 .overlay-img {
+  border-radius: 15px 15px 0 0;
   height: 169px;
   background-color: var(--secondary-background-color);
   background-size: cover;
